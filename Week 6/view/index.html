@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Nepal</title>
+    <!-- Materialize CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="materialize.css" rel="stylesheet">
+</head>
+<body class="blue lighten-5" style="padding-top: 64px;">
+    <!-- Navigation Bar -->
+    <nav class="nav-wrapper blue darken-3 z-depth-2" style="position:fixed; top:0; width:100%; z-index:1000;">
+        <div class="container">
+            <a href="#" class="brand-logo"><img src="Logo.png" class="responsive-img"></a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a href="#home" class="hoverable">Home</a></li>
+                <li><a href="#about" class="hoverable">About</a></li>
+                <li><a href="#contact" class="hoverable">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section class="container section" id="home">
+        <h1 class="center-align" style="margin-top: 64px;">Welcome to Nepal</h1>
+        <p class="center-align">Nepal is a country known for its stunning natural beauty, towering mountains, and rich cultural heritage. Whether you're trekking through the Himalayas or exploring ancient temples, Nepal offers a journey full of wonders.</p>
+        <div class="center-align">
+            <img src="tradition.png" alt="Nepal Tradition Dresh" class="responsive-img" style="max-height:350px;">
+        </div>
+        <p class="center-align">Discover more about the traditions and the beauty of Nepal by scrolling below.</p>
+    </section>
+
+    <!-- Parallax Section -->
+    <div class="parallax-container">
+        <div class="parallax"><img src="mountains.jpg" alt="Nepal Mountains"></div>
+    </div>
+
+<!-- About Section -->
+
+
+<section class="container section" id="about">
+    <h2 class="center-align" style="margin-top: 64px;">About Nepal</h2>
+    <ul class="browser-default" style="list-style-type: disc; padding-left: 1.2rem;">
+        <li>Nepal is a landlocked country in South Asia, sharing borders with India and China. The country is best known for its diverse culture, temples, monasteries, and natural landmarks like Mount Everest, the world’s highest peak.</li>
+        
+        <li>With over 100 ethnic groups, Nepal is rich in customs, traditions, and languages. Visitors can witness a unique blend of Hindu and Buddhist influences, reflected in the country's architecture, festivals, and art.</li>
+        
+        <li>Kathmandu, the capital city, is a vibrant hub for tourism, boasting UNESCO World Heritage Sites, ancient palaces, and bustling markets.</li>
+        
+        <li>Nepal's diverse landscapes range from the majestic Himalayas to lush jungles. Whether it's adventure, culture, or spirituality, Nepal offers an unforgettable experience for every traveler.</li>
+    </ul>
+</section>
+
+
+
+
+
+    <!-- Parallax Section -->
+    <div class="parallax-container">
+        <div class="parallax"><img src="temple.jpg" alt="Nepal Temple"></div>
+    </div>
+
+    <!-- Contact Section -->
+    <div class="container section" id="contact">
+        <h2 class="center-align" style="margin-top: 64px;"> Contact Us</h2>
+        <form>
+            <div class="input-field">
+                <input id="name" type="text" class="validate">
+                <label for="name">Name</label>
+            </div>
+            <div class="input-field">
+                <input id="email" type="email" class="validate">
+                <label for="email">Email</label>
+            </div>
+            <button id="Formsubmit" class="btn waves-effect waves-light" type="submit" name="action">Submit</button>
+        </form>
+    </div>
+
+    <!-- Floating Action Button --> 
+
+    <!-- <div class="fixed-action-btn">
+        <a class="btn-floating btn-large red" href="#contact">
+            <i class="large material-icons">email</i>
+        </a>
+    </div> --> 
+
+    <!-- Footer -->
+    <footer class="page-footer blue darken-3">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                    <h5 class="white-text">About Nepal</h5>
+                    <p class="grey-text text-lighten-4">Nepal offers a rich culture, a vibrant history, and breathtaking natural beauty for every traveler to explore.</p>
+                </div>
+                <div class="col l4 offset-l2 s12">
+                    <h5 class="white-text">Connect With Us</h5>
+                    <ul>
+                        <li><a class="grey-text text-lighten-3" href="#!"><i class="material-icons left">facebook</i> Facebook</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#!"><i class="material-icons left">instagram</i> Instagram</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#!"><i class="material-icons left">twitter</i> Twitter</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                © 2024 Nepal Tourism
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('email').addEventListener('input', function (event) {
+            const emailField = event.target;
+            if (emailField.validity.typeMismatch) {
+                emailField.setCustomValidity('Please enter a valid email address, e.g., user@example.com');
+            } else {
+                emailField.setCustomValidity('');
+            }
+        });
+    </script>
+   <!-- Initialize Parallax -->
+   <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var elems = document.querySelectorAll('.parallax');
+        var instances = M.Parallax.init(elems);
+    });
+    </script>
+    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- Materialize JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <!-- Custom JS -->
+    <script src="./js/scriptMongo.js"></script>
+</body>
+</html>
